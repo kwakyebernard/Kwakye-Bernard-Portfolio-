@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 40px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px 12px;
+    background-color: white;
+    color: #004080;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Sections Styling*/
+section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+section:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+/* Skills Styling*/
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #004080;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Projects Styling*/
+.project-card {
+    background-color: #e6f0ff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-links a {
+    margin-right: 10px;
+    background-color: #004080;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+}
+
+/* Responsive Nature of my portfolio */
+@media(max-width: 768px){
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 120px;
+    }
+}
